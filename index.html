@@ -5,79 +5,88 @@
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <style type="text/css" media="screen">
-      section {
-        height: 100px;
+      #container {
+        margin: 0 auto;
+        background-image: url('./images/board-01.png');
+        width: 100%;
+        height: 1132px;
       }
+
+      @media screen and (min-width: 981px) {
+        #container {
+          max-width: 980px;
+        }
+      }
+
       section::after {
         content: "";
         clear: both;
       }
       .hex {
-        width: 87px;
-        height: 100px;
+        width: 9vw;
+        height: 10vw;
+        float: left;
         background-size: contain;
         background-repeat: no-repeat;
-        float: left;
+        background-position: center center;
       }
-      #support01 { background-image: url("./images/Support-01.png"); }
-      #support02 { background-image: url("./images/Support-01.png"); }
-      #support03 { background-image: url("./images/Support-01.png"); }
-      #support04 { background-image: url("./images/Support-01.png"); }
-      #support05 { background-image: url("./images/Support-01.png"); }
-      #hex01 { background-image: url("./images/ICE-01-01.png"); }
-      #hex02 { background-image: url("./images/ICE-02-01.png"); }
-      #hex03 { background-image: url("./images/ICE-03-01.png"); }
-      #hex04 { background-image: url("./images/ICE-04-01.png"); }
-      #hex05 { background-image: url("./images/ICE-05-01.png"); }
-      #hex06 { background-image: url("./images/ICE-06-01.png"); }
-      #hex07 { background-image: url("./images/ICE-07-01.png"); }
-      #hex08 { background-image: url("./images/ICE-08-01.png"); }
-      #hex09 { background-image: url("./images/ICE-09-01.png"); }
-      #hex10 { background-image: url("./images/ICE-10-01.png"); }
-      #hex11 { background-image: url("./images/ICE-11-01.png"); }
-      #hex12 { background-image: url("./images/ICE-12-01.png"); }
-      #hex13 { background-image: url("./images/ICE-13-01.png"); }
-      #hex14 { background-image: url("./images/ICE-14-01.png"); }
-      #hex15 { background-image: url("./images/ICE-15-01.png"); }
-      #hex16 { background-image: url("./images/ICE-16-01.png"); }
-      #hex17 { background-image: url("./images/ICE-17-01.png"); }
-      #hex18 { background-image: url("./images/ICE-18-01.png"); }
-      #hex19 { background-image: url("./images/ICE-19-01.png"); }
-      #hex20 { background-image: url("./images/ICE-20-01.png"); }
     </style>
   </head>
   <body>
-    <section>
-      <div class="hex" id="support01"></div>
-      <div class="hex" id="support02"></div>
-      <div class="hex" id="hex01"></div>
-      <div class="hex" id="hex02"></div>
-    </section>
-    <section>
-      <div class="hex" id="hex03"></div>
-      <div class="hex" id="hex04"></div>
-      <div class="hex" id="hex05"></div>
-      <div class="hex" id="hex06"></div>
-      <div class="hex" id="hex07"></div>
-    </section>
-    <section>
-      <div class="hex" id="support03"></div>
-      <div class="hex" id="support04"></div>
-      <div class="hex" id="support05"></div>
-      <div class="hex" id="hex08"></div>
-      <div class="hex" id="hex09"></div>
-      <div class="hex" id="hex10"></div>
-      <div class="hex" id="hex11"></div>
-      <div class="hex" id="hex12"></div>
-      <div class="hex" id="hex13"></div>
-      <div class="hex" id="hex14"></div>
-      <div class="hex" id="hex15"></div>
-      <div class="hex" id="hex16"></div>
-      <div class="hex" id="hex17"></div>
-      <div class="hex" id="hex18"></div>
-      <div class="hex" id="hex19"></div>
-      <div class="hex" id="hex20"></div>
-    </section>
+    <div id="container">
+      <section>
+        <div class="hex" id="grid1"></div>
+        <div class="hex" id="grid2"></div>
+        <div class="hex" id="grid3"></div>
+        <div class="hex" id="grid4"></div>
+      </section>
+      <section>
+        <div class="hex" id="grid5"></div>
+        <div class="hex" id="grid6"></div>
+        <div class="hex" id="grid7"></div>
+        <div class="hex" id="grid8"></div>
+        <div class="hex" id="grid9"></div>
+      </section>
+      <section>
+        <div class="hex" id="grid10"></div>
+        <div class="hex" id="grid11"></div>
+        <div class="hex" id="grid12"></div>
+        <div class="hex" id="grid13"></div>
+        <div class="hex" id="grid14"></div>
+        <div class="hex" id="grid15"></div>
+      </section>
+      <section>
+        <div class="hex" id="grid16"></div>
+        <div class="hex" id="grid17"></div>
+        <div class="hex" id="grid18"></div>
+        <div class="hex" id="grid19"></div>
+        <div class="hex" id="grid20"></div>
+        <div class="hex" id="grid21"></div>
+        <div class="hex" id="grid22"></div>
+      </section>
+      <section>
+        <div class="hex" id="grid23"></div>
+        <div class="hex" id="grid24"></div>
+        <div class="hex" id="grid25"></div>
+        <div class="hex" id="grid26"></div>
+        <div class="hex" id="grid27"></div>
+        <div class="hex" id="grid28"></div>
+      </section>
+      <section>
+        <div class="hex" id="grid29"></div>
+        <div class="hex" id="grid30"></div>
+        <div class="hex" id="grid31"></div>
+        <div class="hex" id="grid32"></div>
+        <div class="hex" id="grid33"></div>
+      </section>
+      <section>
+        <div class="hex" id="grid34"></div>
+        <div class="hex" id="grid35"></div>
+        <div class="hex" id="grid36"></div>
+        <div class="hex" id="grid37"></div>
+      </section>
+    </div>
+
     <script type="text/javascript">
     </script>
   </body>
