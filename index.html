@@ -88,6 +88,73 @@
     </div>
 
     <script type="text/javascript">
+      function generator() {
+        var hexes = _shuffleHexes(), i = 0;
+        hexes.forEach(function(hex, index) {
+          index += 1;
+
+          if (hex === null) {
+            $('#grid'+index).removeAttr('style');
+          } else {
+            $('#grid'+index).css('background-image', 'url("' + hex + '")');
+          }
+        });
+      }
+
+      function _shuffleHexes() {
+        var hexes = [
+          "./images/Support-01.png",
+          "./images/Support-01.png",
+          "./images/Support-01.png",
+          "./images/Support-01.png",
+          "./images/Support-01.png",
+          "./images/ICE-01-01.png",
+          "./images/ICE-02-01.png",
+          "./images/ICE-03-1.png",
+          "./images/ICE-04-01.png",
+          "./images/ICE-05-01.png",
+          "./images/ICE-06-01.png",
+          "./images/ICE-07-01.png",
+          "./images/ICE-08-01.png",
+          "./images/ICE-09-01.png",
+          "./images/ICE-10-01.png",
+          "./images/ICE-11-01.png",
+          "./images/ICE-12-01.png",
+          "./images/ICE-13-01.png",
+          "./images/ICE-14-01.png",
+          "./images/ICE-15-01.png",
+          "./images/ICE-16-01.png",
+          "./images/ICE-17-01.png",
+          "./images/ICE-18-01.png",
+          "./images/ICE-19-01.png",
+          "./images/ICE-20-01.png",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ];
+
+        // http://stackoverflow.com/a/6274398
+        var counter = 37, temp, index;
+        while (counter > 0) {
+          index = Math.floor(Math.random() * counter);
+          counter--;
+          temp = hexes[counter];
+          hexes[counter] = hexes[index];
+          hexes[index] = temp;
+        }
+        return hexes;
+      }
+
+      generator();
     </script>
   </body>
 </html>
