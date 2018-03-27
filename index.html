@@ -20,36 +20,47 @@
         }
       }
 
-      section::after {
-        content: "";
-        clear: both;
+      #sect1, #sect2, #sect3, #sect4, #sect5, #sect6, #sect7 {
+        position: relative;
       }
+
+      #sect1 {
+
+      }
+
       .hex {
-        width: 9vw;
-        height: 10vw;
+        width: 7vw;
+        height: 8vw;
         float: left;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
       }
+
+      .clear {
+        display: block;
+        clear: both;
+      }
     </style>
   </head>
   <body>
     <div id="container">
-      <section>
+      <section id="sect1">
         <div class="hex" id="grid1"></div>
         <div class="hex" id="grid2"></div>
         <div class="hex" id="grid3"></div>
         <div class="hex" id="grid4"></div>
       </section>
-      <section>
+      <span class="clear"></span>
+      <section id="sect2">
         <div class="hex" id="grid5"></div>
         <div class="hex" id="grid6"></div>
         <div class="hex" id="grid7"></div>
         <div class="hex" id="grid8"></div>
         <div class="hex" id="grid9"></div>
       </section>
-      <section>
+      <span class="clear"></span>
+      <section id="sect3">
         <div class="hex" id="grid10"></div>
         <div class="hex" id="grid11"></div>
         <div class="hex" id="grid12"></div>
@@ -57,7 +68,8 @@
         <div class="hex" id="grid14"></div>
         <div class="hex" id="grid15"></div>
       </section>
-      <section>
+      <span class="clear"></span>
+      <section id="sect4">
         <div class="hex" id="grid16"></div>
         <div class="hex" id="grid17"></div>
         <div class="hex" id="grid18"></div>
@@ -66,7 +78,8 @@
         <div class="hex" id="grid21"></div>
         <div class="hex" id="grid22"></div>
       </section>
-      <section>
+      <span class="clear"></span>
+      <section id="sect5">
         <div class="hex" id="grid23"></div>
         <div class="hex" id="grid24"></div>
         <div class="hex" id="grid25"></div>
@@ -74,14 +87,16 @@
         <div class="hex" id="grid27"></div>
         <div class="hex" id="grid28"></div>
       </section>
-      <section>
+      <span class="clear"></span>
+      <section id="sect6">
         <div class="hex" id="grid29"></div>
         <div class="hex" id="grid30"></div>
         <div class="hex" id="grid31"></div>
         <div class="hex" id="grid32"></div>
         <div class="hex" id="grid33"></div>
       </section>
-      <section>
+      <span class="clear"></span>
+      <section id="sect7">
         <div class="hex" id="grid34"></div>
         <div class="hex" id="grid35"></div>
         <div class="hex" id="grid36"></div>
@@ -112,7 +127,7 @@
           "./images/Support-01.png",
           "./images/ICE-01-01.png",
           "./images/ICE-02-01.png",
-          "./images/ICE-03-1.png",
+          "./images/ICE-03-01.png",
           "./images/ICE-04-01.png",
           "./images/ICE-05-01.png",
           "./images/ICE-06-01.png",
