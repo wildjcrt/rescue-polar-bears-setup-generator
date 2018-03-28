@@ -2,18 +2,13 @@
   margin: 0 auto;
   width: 100%;
   height: 844px;
+  overflow: hidden;
   background-image: url('./images/board-02.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 981px) {
-  #container {
-    max-width: 980px;
-  }
-}
-
-#sect1, #sect2, #sect3, #sect4, #sect5, #sect6, #sect7 {
+section {
   position: relative;
   clear: both;
 }
@@ -54,4 +49,53 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+@media screen and (min-width: 981px) {
+  #container {
+    max-width: 980px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  #sect1 {
+    top: 8vw;
+    left: 28.2vw;
+  }
+
+  #sect2 {
+    top: 4.5vw;
+    left: 22.8vw;
+  }
+
+  #sect3 {
+    top: 0.8vw;
+    left: 17.6vw;
+  }
+
+  #sect4 {
+    top: -2.5vw;
+    left: 12vw;
+  }
+
+  #sect5 {
+    top: -6.3vw;
+    left: 17.6vw;
+  }
+
+  #sect6 {
+    top: -10vw;
+    left: 22.8vw;
+  }
+
+  #sect7 {
+    top: -13.5vw;
+    left: 28.2vw;
+  }
+
+  .hex {
+    width: 10vw;
+    height: 13vw;
+    margin: 0 0.45%;
+  }
 }
