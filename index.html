@@ -4,71 +4,9 @@
     <title>拯救北極熊起始版圖設置產生器</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, minimal-ui">
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <style type="text/css" media="screen">
-      #container {
-        margin: 0 auto;
-        width: 100%;
-        height: 844px;
-        background-image: url('./images/board-02.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-
-      @media screen and (min-width: 981px) {
-        #container {
-          max-width: 980px;
-        }
-      }
-
-      #sect1, #sect2, #sect3, #sect4, #sect5, #sect6, #sect7 {
-        position: relative;
-        clear: both;
-      }
-      #sect1 {
-        top: 87px;
-        left: 279px;
-      }
-      #sect2 {
-        top: 70px;
-        left: 226px;
-      }
-      #sect3 {
-        top: 52px;
-        left: 172px;
-      }
-      #sect4 {
-        top: 34px;
-        left: 120px;
-      }
-      #sect5 {
-        top: 16px;
-        left: 172px;
-      }
-      #sect6 {
-        top: -2px;
-        left: 226px;
-      }
-      #sect7 {
-        top: -19px;
-        left: 279px;
-      }
-
-      .hex {
-        width: 101px;
-        height: 110px;
-        margin: 0 2.85px;
-        float: left;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
-      }
-
-      .clear {
-        display: block;
-        clear: both;
-      }
-    </style>
   </head>
   <body>
     <button name="button" onclick="generator();">重新產生</button>
